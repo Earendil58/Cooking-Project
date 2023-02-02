@@ -5,16 +5,5 @@
 </div>
 <hr>
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action" *ngFor="let recipe of recipes">
-    <div class="group-items-recipe">
-      <div class="float-left">
-        <h4>{{recipe.name}}</h4>
-        <p>{{recipe.description}}</p>
-      </div>
-      <div class="recipe-image-list">
-        <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" class="rounded float-right">
-      </div>
-    </div>
-  </a>
-  <app-recipe-item></app-recipe-item>
+  <app-recipe-item *ngFor="let recipe of recipes" [recipeItem]="recipe"></app-recipe-item>
 </div>
