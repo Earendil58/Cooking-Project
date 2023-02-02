@@ -1,0 +1,12 @@
+.group-items-recipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+/* .recipe-image-list {
+  display: flex;
+  justify-content: end;
+} */
