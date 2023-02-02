@@ -9,4 +9,8 @@ export class HeaderComponent{
 
   collapsed = true;
 
+  onSelect(text){
+    console.log(text);
+  }
+
 }
