@@ -5,6 +5,5 @@
 </div>
 <hr>
 <div class="list-group">
-  <app-recipe-item (recipeSelected)="onRecipeSelected(recipe)" *ngFor="let recipe of recipes"
-    [recipeItem]="recipe"></app-recipe-item>
+  <app-recipe-item *ngFor="let recipe of recipes" [recipeItem]="recipe"></app-recipe-item>
 </div>
