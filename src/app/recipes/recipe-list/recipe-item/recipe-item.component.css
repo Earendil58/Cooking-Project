@@ -1,0 +1,7 @@
+.active a,
+.active a:hover,
+.active a:focus,
+.active a:active {
+  color: white;
+  background-color: black;
+}
