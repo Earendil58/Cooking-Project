@@ -15,6 +15,8 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { AppRouting } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { ShoppingService } from './shopping-list/shopping.service';
+import { RecipeService } from './recipes/recipe.service';
 
 
 
@@ -38,7 +40,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     AppRouting,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ShoppingService, RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
